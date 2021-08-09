@@ -1,12 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+
+    background-color: #524C48;
+    padding: 0px;
+    margin: 0px;
+}
+
+section{
+    max-width: 80%;
+    margin: 0 auto 200px;
+    text-align: center;
 }
 
 .title{
     position: relative;
+    padding: 0px;
+    margin: 0px;
 }
 
 .title h1{
+
+    text-align: center;
 
     font-size: 250%;
 
@@ -15,17 +38,34 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    /* 位置調整 */
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+
+    background-color: #d6d6d6;
+
 }
 
-header{
-    background-color: rgb(145, 145, 145);
-    margin: 0%;
+img{
+    vertical-align:bottom;
+    /* 画像下の余白が消えるよ */
+}
 
+
+
+header{
+    background-color: #d6d6d6;
+    margin: 0;
+    padding: 0;
+
+    /* スティッキーヘッダー */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
+    vertical-align: bottom;
 
 }
 
@@ -58,7 +98,18 @@ li{
 }
 
 h2{
+    font-size: 200%;
     text-align: center;
+    background-color: #d6d6d6;
+    padding: 30px;
+}
+
+.COC h3{
+    
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 10px;
+    border-left: 10px solid #d6d6d6;
 }
 
 p{
@@ -66,10 +117,91 @@ p{
 }
 
 
+.system{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 80%;
+    margin: 100px auto 0;
+}
+
+.system li{
+    width: calc(100%/5);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+
+
+.player{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+.player li{
+    width: calc(100%/3);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.player img{
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #999;
+}
+
+
+
+
+
+.sessionList h3{
+    padding: 0 0 30px;
+    margin: 0;
+}
+
+.sessionList img{
+    border-radius: 30px;
+}
+
+.sessionA{
+    border: 10px solid #1F3031;
+}
+
+.sessionB{
+    border: 10px solid #2E201E;
+}
+
+.sessionC{
+    border: 10px solid #3E4D5B;
+}
+
+.sessionD{
+    border: 10px solid #634317;
+}
+
+.sessionE{
+    border: 10px solid #2D3E27;
+}
+
+.sessionF{
+    border: 10px solid #808080;
+}
 
 .coc-session{
     width: 200px;
     height: 200px;
 }
+
+
+.about{
+    box-sizing: border-box;
+    padding: 100px;
+    background-color: #524C48;
+}
+
 
 
