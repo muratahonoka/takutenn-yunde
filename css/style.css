@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'iroha-R';
+    src: url('../fonts/いろはマル＿R.woff')format('woff');
+}
+
+@font-face {
+    font-family: 'iroha-L';
+    src: url('../fonts/いろはマル＿L.woff')format('woff');
+}
+
+@font-face {
+    font-family: 'iroha-M';
+    src: url('../fonts/いろはマル＿M.woff')format('woff');
+}
+
+@font-face {
+    font-family: 'XANO';
+    src: url('../fonts/XANO.woff')format('woff');
+}
+
+
+
+
+
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -6,6 +32,7 @@
 body{
     padding: 0px;
     margin: 0px;
+    font-family: XANO;
 }
 
 main{
@@ -76,11 +103,11 @@ header{
 }
 
 .headerRight{
-    padding: 5px 30px;
+    padding: 10px 30px;
 }
 
 .headerLeft{
-    padding: 0 30px;
+    padding: 10px 30px;
     margin-right: auto;
 
 }
@@ -102,6 +129,7 @@ h2{
     text-align: center;
     background-color: #d6d6d6;
     padding: 30px;
+    margin-bottom: 100px;
 }
 
 .COC h3{
@@ -127,8 +155,14 @@ p{
 
 .system li{
     width: calc(100%/5);
-    padding: 0 5px;
+    padding: 0 10px;
     box-sizing: border-box;
+}
+
+.system img{
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #999;
 }
 
 
