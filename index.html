@@ -33,22 +33,27 @@
             </h1>
         </div>
 
+
         <header>
+
             <div class="headerContents">
-                <h3 class="headerLeft">タイトル</h3>
+
+                <h3 class="headerLeft">クトゥルフ</h3>
 
                 <div class="headerRight">
                     <ul class="list">
-                        <li>TRPG</li>
-                        <li>システム</li>
-                        <li>COC</li>
-                        <li>感想</li>
+                        <a href="#menu1"><li>TRPG</li></a>
+                        <a href="#menu2"><li>システム</li></a>
+                        <a href="#menu3"><li>COC</li></a>
+                        <a href="#menu4"><li>感想</li></a>
                     </ul>
                 </div>
-            
+
             </div>
 
         </header>
+
+
 
         <main>
 
@@ -56,28 +61,28 @@
                 画像を入れる予定
             </div>
 
-            <section>
 
-                <h2>TRPGってなんぞや？？？</h2>
+
+            <a id="menu1"><section></a>
+
+                <h2>TRPGってなぁに？？？</h2>
 
                 <p>TRPGは、登場人物の1人になってとある物語を完成させることができる遊び！！</p>
                 <p>自分のやりたいことが(ある程度)自由に選択できる！！</p>
                 <p>サイコロの出た目によって結末が変わることもある！！</p>
                 <p>人生ゲームみたい！！</p>
 
-
-
-
             </section>
 
-            <section>
+
+            <a id="menu2"><section></a>
 
                 <h2>どんなのがあるんや？？？</h2>
 
                 <ul class="system">
                     <li>
                         <img src="images/coc.png" alt="クトゥルフ神話TRPG" class="coc-session">
-                        <p>クトゥルフ神話TRPG</p>
+                        <p>クトゥルフ神話<br>TRPG</p>
                     </li>
                     <li>
                         <img src="images/wcross.png" alt="ダブルクロス" class="coc-session">
@@ -107,7 +112,9 @@
 
             </section>
 
-            <section class="COC">
+
+
+            <a id="menu3"><section class="COC"></a>
 
                 <h2>COCをよく見てる</h2>
 
@@ -133,35 +140,99 @@
 
             </section>
 
-            <section>
+
+            <a id="menu4"><section></a>
 
                 <h2>好きな配信！！！</h2>
 
                 <ul class="sessionList">
+
                     <li>
-                        <img src="images/kaitai.png" alt="壊胎" class="coc-session sessionA">
-                        <h3>壊胎</h3>
+                        <div class="coc-container">
+
+                            <label for="popup-on">
+                                <div class="coc-picture">
+                                    <img src="images/kaitai.png" alt="壊胎" class="coc-session sessionA">
+                                </div>
+                            </label>
+
+                            <div class="popup-wrap"><input type="checkbox" id="popup-on">
+
+                                <!-- ポップアップ1の内容 -->
+                                <!-- <div class="popup">
+                                    <div class="popup-contents">
+                                        <img src="images/kaitai.png" alt="壊胎">
+                                        <p>壊胎最高</p>
+                                        <label for="popup-on"><div class="btn-close">閉じる</div></label>
+                                    </div>
+                                </div> -->
+                                <!-- ポップアップ1終わり -->
+
+                            </div>
+
+
+
+                            <div class="coc-text">
+                                <h3>壊胎</h3>
+                            </div>
+                        </div>
                     </li>
+
                     <li>
-                        <img src="images/kaikou.png" alt="傀逅" class="coc-session sessionB">
-                        <h3>傀逅</h3>
+                        <div class="coc-container">
+                            <div class="coc-picture">
+                                <img src="images/kaikou.png" alt="傀逅" class="coc-session sessionB">
+                            </div>
+                            <div class="coc-text">
+                                <h3>傀逅</h3>
+                            </div>
+                        </div>
                     </li>
+
                     <li>
-                        <img src="images/yama.png" alt="狂気山脈" class="coc-session sessionC">
-                        <h3>狂気山脈</h3>
+                        <div class="coc-container">
+                            <div class="coc-picture">
+                                <img src="images/yama.png" alt="狂気山脈" class="coc-session sessionC">
+                            </div>
+                            <div class="coc-text">
+                                <h3>狂気山脈</h3>
+                            </div>
+                        </div>
                     </li>
+
                     <li>
-                        <img src="images/kazoku.png" alt="とある幸せな家族の話" class="coc-session sessionD">
-                        <h3>とある幸せな家族の話</h3>
+                        <div class="coc-container">
+                            <div class="coc-picture">
+                                <img src="images/kazoku.png" alt="とある幸せな家族の話" class="coc-session sessionD">
+                            </div>
+                            <div class="coc-text">
+                                <h3>とある幸せな家族の話</h3>
+                            </div>
+                        </div>
                     </li>
+
                     <li>
-                        <img src="images/katashiro.png" alt="カタシロ" class="coc-session sessionE">
-                        <h3>カタシロ</h3>
+                        <div class="coc-container">
+                            <div class="coc-picture">
+                                <img src="images/katashiro.png" alt="カタシロ" class="coc-session sessionE">
+                            </div>
+                            <div class="coc-text">
+                                <h3>カタシロ</h3>
+                            </div>
+                        </div>
                     </li>
+
                     <li>
-                        <img src="images/kanakimi.png" alt="彼方からの君に捧ぐ" class="coc-session sessionF">
-                        <h3>彼方からの君に捧ぐ</h3>
+                        <div class="coc-container">
+                            <div class="coc-picture">
+                                <img src="images/kanakimi.png" alt="彼方からの君に捧ぐ" class="coc-session sessionF">
+                            </div>
+                            <div class="coc-text">
+                                <h3>彼方からの君に捧ぐ</h3>
+                            </div>
+                        </div>
                     </li>
+
                 </ul>
 
                 <p>たくさんありゅ！！</p>

@@ -33,19 +33,25 @@ body{
     padding: 0px;
     margin: 0px;
     font-family: XANO;
+    font-size: 150%;
+    color: #F6EEEE;
 }
 
 main{
 
+    box-sizing: border-box;
     background-color: #524C48;
     padding: 0px;
     margin: 0px;
 }
 
 section{
-    max-width: 80%;
-    margin: 0 auto 200px;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 48px 0 200px;
     text-align: center;
+    
+
 }
 
 .title{
@@ -61,7 +67,7 @@ section{
     font-size: 250%;
 
     position: absolute;
-    color: white;
+    color: #4e3512;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -83,7 +89,7 @@ img{
 
 
 header{
-    background-color: #d6d6d6;
+    background-color: #cec8c3;
     margin: 0;
     padding: 0;
 
@@ -109,6 +115,7 @@ header{
 .headerLeft{
     padding: 10px 30px;
     margin-right: auto;
+    color: #653838;
 
 }
 
@@ -125,20 +132,31 @@ li{
 }
 
 h2{
+
+    font-family: 'iroha-M';
+    color: #4e3512;
+
     font-size: 200%;
     text-align: center;
-    background-color: #d6d6d6;
+    background-color: #dfdad7;
     padding: 30px;
     margin-bottom: 100px;
 }
 
 .COC h3{
-    
+
+    font-family: 'iroha-R';
+
     text-align: left;
-    margin-top: 50px;
+    margin: 50px 0;
     padding-left: 10px;
     border-left: 10px solid #d6d6d6;
 }
+
+li p{
+    margin-top: 10px;
+}
+
 
 p{
     text-align: center;
@@ -149,20 +167,25 @@ p{
     display: flex;
     flex-wrap: wrap;
 
-    max-width: 80%;
+    max-width: 100%;
     margin: 100px auto 0;
 }
 
 .system li{
     width: calc(100%/5);
-    padding: 0 10px;
+    padding: 10px;
     box-sizing: border-box;
+}
+
+.system p{
+    text-align: center;
 }
 
 .system img{
     max-width: 100%;
     height: auto;
     border: 5px solid #999;
+    box-sizing: border-box;
 }
 
 
@@ -171,7 +194,7 @@ p{
     display: flex;
     flex-wrap: wrap;
 
-    max-width: 70%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -189,12 +212,18 @@ p{
 }
 
 
+.sessionList{
+    box-sizing: border-box;
+}
 
-
+.sessionList li{
+    margin: 50px;
+    color: #634317;
+}
 
 .sessionList h3{
     padding: 0 0 30px;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .sessionList img{
@@ -218,7 +247,7 @@ p{
 }
 
 .sessionE{
-    border: 10px solid #2D3E27;
+    border: 10px solid #212c1d;
 }
 
 .sessionF{
@@ -230,6 +259,22 @@ p{
     height: 200px;
 }
 
+.coc-container{
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto;
+
+    padding: 50px;
+
+    background-color: #DFDCD8;
+    border-radius: 80px;
+
+}
+
+.coc-text{
+    margin: auto;
+}
+
 
 .about{
     box-sizing: border-box;
@@ -237,5 +282,58 @@ p{
     background-color: #524C48;
 }
 
+a{
+    color: #653838;
+    text-decoration: none;
+}
 
 
+/* ポップアップ */
+/* .popup img{
+    width: 200px;
+    height: 200px;
+}
+
+.popup-wrap input{
+    display: none;
+} */
+
+/* .popup{
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup-on{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-contents{
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: orange;
+    position: relative;
+    align-self: center;
+    width: 75%;
+    max-width: 500px;
+}
+
+.btn-close{
+    box-sizing: border-box;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+input:checked + .popup{
+    display: block;
+} */
