@@ -299,46 +299,42 @@ a{
 }
 
 
-/* ポップアップ test*/
+/* ポップアップ */
 
 .over{
     display: none;
 }
-
-#test{
-    
-    color: black;
-
-    /* 枠の大きさ */
-    width: 100px;
-    height: 100px;
-    background-color: white;
-
-    /* 枠の位置 */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-}
-
 
 /* これ絶対 チェックボックスを見せない*/
 input[type="checkbox"]{
     display: none;
 }
 
-label[for="test2"]{
-    display: block;
-    background-color: coral;
+.popup-container{
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.close-btn{
+
+    position: absolute;
+
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+
+    box-sizing: border-box;
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: #F6EEEE;
+    background-color: #524C48;
 }
 
 
-/* 後ろの暗いやつ */
-#test2:checked + .over{
+#triggerA:checked + .over{
     display: block;
     z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -346,6 +342,176 @@ label[for="test2"]{
     left: 0px;
 }
 
-#test label{
-    background-color: coral;
+#popupA{
+
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 500px;
+    height: 500px;
+    background-color: #DFDCD8;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+
+}
+
+
+#triggerB:checked + .over{
+    display: block;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#popupB{
+
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 500px;
+    height: 500px;
+    background-color: #DFDCD8;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+
+}
+
+
+#triggerC:checked + .over{
+    display: block;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#popupC{
+
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 500px;
+    height: 500px;
+    background-color: #DFDCD8;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+
+}
+
+
+#triggerD:checked + .over{
+    display: block;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#popupD{
+
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 500px;
+    height: 500px;
+    background-color: #DFDCD8;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+
+}
+
+
+#triggerE:checked + .over{
+    display: block;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#popupE{
+
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 500px;
+    height: 500px;
+    background-color: #DFDCD8;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+
+}
+
+
+#triggerF:checked + .over{
+    display: block;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#popupF{
+
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 500px;
+    height: 500px;
+    background-color: #DFDCD8;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+
 }
