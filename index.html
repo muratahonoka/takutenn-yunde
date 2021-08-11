@@ -118,9 +118,18 @@
 
                 <h2>COCをよく見てる</h2>
 
-                <h3>COCシナリオの種類</h3>
-                <p>クローズド</p>
-                <p>シティ</p>
+                <h3>COCシナリオの系統</h3>
+
+                <div class="closed-city">
+                    <img src="images/closed.png" alt="クローズド系" class="coc-kinds">
+                    <p class="coc-text">クローズド</p>
+                </div>
+                <div class="closed-city">
+                    <p class="coc-text">シティ</p>
+                    <img src="images/city.png" alt="シティ系" class="coc-kinds">
+                    
+                </div>
+
 
                 <h3>プレイヤー人数</h3>
                 <ul class="player">
@@ -150,25 +159,11 @@
                     <li>
                         <div class="coc-container">
 
-                            <label for="popup-on">
                                 <div class="coc-picture">
                                     <img src="images/kaitai.png" alt="壊胎" class="coc-session sessionA">
                                 </div>
-                            </label>
 
-                            <div class="popup-wrap"><input type="checkbox" id="popup-on">
-
-                                <!-- ポップアップ1の内容 -->
-                                <!-- <div class="popup">
-                                    <div class="popup-contents">
-                                        <img src="images/kaitai.png" alt="壊胎">
-                                        <p>壊胎最高</p>
-                                        <label for="popup-on"><div class="btn-close">閉じる</div></label>
-                                    </div>
-                                </div> -->
-                                <!-- ポップアップ1終わり -->
-
-                            </div>
+                            
 
 
 
@@ -242,6 +237,24 @@
 
 
         <footer>
+
+            <!-- ポップアップtest -->
+
+            <label for="test2">ここだよ</label>
+
+            <!-- チェックボックス -->
+            <input type="checkbox" id="test2">
+            
+            <!-- ポップアップ外 -->
+            <div class="over">
+                <!-- ポップアップ中 -->
+                <div id="test">
+                    わーーーーーー
+
+                    <label for="test2">閉じる</label>
+
+                </div>
+            </div>
 
         </footer>
     </body>
