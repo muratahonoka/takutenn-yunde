@@ -287,10 +287,24 @@ p{
 }
 
 
-.about{
+.image1{
     box-sizing: border-box;
-    padding: 10vh;
+    padding: 10vh 0 30vh;
     background-color: #524C48;
+    text-align: center;
+}
+
+.image2{
+    box-sizing: border-box;
+    padding: 30vh 0 10vh;
+    background-color: #524C48;
+    text-align: center;
+}
+
+.image{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
 }
 
 a{
