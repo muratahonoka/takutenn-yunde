@@ -38,7 +38,7 @@
 
             <div class="headerContents">
 
-                <h3 class="headerLeft">クトゥルフ</h3>
+                <p class="headerLeft">クトゥルフ</p>
 
                 <div class="headerRight">
                     <ul class="list">
@@ -47,6 +47,7 @@
                         <a href="#menu3"><li>COC</li></a>
                         <a href="#menu4"><li>感想</li></a>
                     </ul>
+                    <div class="next-btn"><p>＞</p></div>
                 </div>
 
             </div>
@@ -67,10 +68,12 @@
 
                 <h2>TRPGってなぁに？？？</h2>
 
-                <p>TRPGは、登場人物の1人になってとある物語を完成させることができる遊び！！</p>
-                <p>自分のやりたいことが(ある程度)自由に選択できる！！</p>
-                <p>サイコロの出た目によって結末が変わることもある！！</p>
-                <p>人生ゲームみたい！！</p>
+                <div class="menu-text">
+                    <p>TRPGは、登場人物の1人になってとある物語を完成させることができる遊び！！</p>
+                    <p>自分のやりたいことが(ある程度)自由に選択できる！！</p>
+                    <p>サイコロの出た目によって結末が変わることもある！！</p>
+                    <p>人生ゲームみたい！！</p>
+                </div>
 
             </section>
 
@@ -102,13 +105,15 @@
                     </li>
                 </ul>
 
-                <p>いろいろありゅ！！</p>
-                <p>そのシステムごとに特徴がある！！</p>
-                <p>
-                    例えば、
-                    ダブルクロスなら戦闘シーン特化で遊べるし、
-                    エモクロアなら怪異と共鳴するという特殊な経験ができる！！！
-                </p>
+                <div class="menu-text">
+                    <p>他にもいろいろなシステムがあるよ！！</p>
+                    <p>そのシステムごとに特徴がある！！</p>
+                    <p>
+                        例えば、
+                        ダブルクロスなら戦闘シーン特化で遊べるし、
+                        エモクロアなら怪異と共鳴する！！！
+                    </p>
+                </div>
 
             </section>
 
@@ -154,6 +159,8 @@
 
                 <h2>好きな配信！！！</h2>
 
+                <p>タイトルをクリックすると、そのシナリオのネタバレ込みで好きなところを語っています</p>
+
                 <ul class="sessionList">
 
                     <li>
@@ -163,19 +170,28 @@
                             </div>
                             
                             <label for="triggerA" class="coc-text">
-                                    <h3>壊胎</h3>
+                                    <p class="textSize">壊胎</p>
                             </label>
 
                             <input type="checkbox" id="triggerA">
 
                             <div class="over">
-                                <div id="popupA">
+                                <div id="popupA" class="popup">
                                     <div class="popup-container">
                                         <img src="images/kaitai.png" alt="壊胎" class="popup-session">
-                                        <p>
-                                            とっても不思議なクローズド-----------------------------------------------------------------------------
-                                        </p>
+                                        <p class="textSize">あなたたちは選ばれた</p>
                                     </div>
+                                    <p class="popup-text">
+                                        すごくかっこいい"変身"が見れる。
+                                        最初はクローズものとして、謎解き要素も多くある。
+                                        さらに、2PLであるが故にこのシナリオをやる人それぞれに異なった関係性が作られる。
+                                        最後の最後までハラハラが止まらないとても面白いシナリオ！！！
+                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                                    </p>
     
                                     <label for="triggerA" class="close-btn">閉じる</label>
     
@@ -194,7 +210,7 @@
                                 <img src="images/kaikou.png" alt="傀逅" class="coc-session sessionB">
                             </div>
                             <label for="triggerB" class="coc-text">
-                                <h3>傀逅</h3>
+                                <p class="textSize">傀逅</p>
                             </label>
 
                             <input type="checkbox" id="triggerB">
@@ -203,8 +219,9 @@
                                 <div id="popupB">
                                     <div class="popup-container">
                                         <img src="images/kaikou.png" alt="傀逅" class="popup-session">
-                                        <p>あなたたちは選ばれた</p>
+                                        <p class="textSize">それはまるで</p>
                                     </div>
+                                    <p class="popup-text">情緒がめちゃくちゃ</p>
     
                                     <label for="triggerB" class="close-btn">閉じる</label>
     
@@ -220,7 +237,7 @@
                                 <img src="images/yama.png" alt="狂気山脈" class="coc-session sessionC">
                             </div>
                             <label for="triggerC" class="coc-text">
-                                <h3>狂気山脈</h3>
+                                <p class="textSize">狂気山脈<br><span>〜</span>邪神の山嶺<span>〜</span></p>
                             </label>
 
                             <input type="checkbox" id="triggerC">
@@ -229,8 +246,9 @@
                                 <div id="popupC">
                                     <div class="popup-container">
                                         <img src="images/yama.png" alt="狂気山脈" class="popup-session">
-                                        <p>頂上を目指して</p>
+                                        <p class="textSize">頂上を目指して</p>
                                     </div>
+                                    <p class="popup-text">楽しさと緊張感と感動が味わえる<br>アニメ映画化プロジェクトが動いているよ</p>
     
                                     <label for="triggerC" class="close-btn">閉じる</label>
     
@@ -246,7 +264,7 @@
                                 <img src="images/kazoku.png" alt="とある幸せな家族の話" class="coc-session sessionD">
                             </div>
                             <label for="triggerD" class="coc-text">
-                                <h3>とある幸せな家族の話</h3>
+                                <p class="textSize">とある幸せな家族の話</p>
                             </label>
 
                             <input type="checkbox" id="triggerD">
@@ -255,8 +273,9 @@
                                 <div id="popupD">
                                     <div class="popup-container">
                                         <img src="images/kazoku.png" alt="とある幸せな家族の話" class="popup-session">
-                                        <p>あなたは家族を愛している</p>
+                                        <p class="textSize">あなたは家族を愛している</p>
                                     </div>
+                                    <p class="popup-text">互いが互いのことを思いあう幸せな家族であるが故に</p>
     
                                     <label for="triggerD" class="close-btn">閉じる</label>
     
@@ -272,7 +291,7 @@
                                 <img src="images/katashiro.png" alt="カタシロ" class="coc-session sessionE">
                             </div>
                             <label for="triggerE" class="coc-text">
-                                <h3>カタシロ</h3>
+                                <p class="textSize">カタシロ</p>
                             </label>
 
                             <input type="checkbox" id="triggerE">
@@ -281,8 +300,9 @@
                                 <div id="popupE">
                                     <div class="popup-container">
                                         <img src="images/katashiro.png" alt="カタシロ" class="popup-session">
-                                        <p>強い光を覚えている</p>
+                                        <p class="textSize">強い光を覚えている</p>
                                     </div>
+                                    <p class="popup-text">短いながらも考えさせられる<br>これをもとに舞台化したカタシロリビルドもすごく良かった</p>
     
                                     <label for="triggerE" class="close-btn">閉じる</label>
     
@@ -298,7 +318,7 @@
                                 <img src="images/kanakimi.png" alt="彼方からの君に捧ぐ" class="coc-session sessionF">
                             </div>
                             <label for="triggerF" class="coc-text">
-                                <h3>彼方からの君に捧ぐ</h3>
+                                <p class="textSize">彼方からの君に捧ぐ</p>
                             </label>
 
                             <input type="checkbox" id="triggerF">
@@ -307,8 +327,9 @@
                                 <div id="popupF">
                                     <div class="popup-container">
                                         <img src="images/kanakimi.png" alt="彼方からの君に捧ぐ" class="popup-session">
-                                        <p>君とよく似た顔で</p>
+                                        <p class="textSize">君とよく似た顔で</p>
                                     </div>
+                                    <p class="popup-text">4人でわちゃわちゃしながらも大きな決断を求められる</p>
     
                                     <label for="triggerF" class="close-btn">閉じる</label>
     

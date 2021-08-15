@@ -27,6 +27,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-size: 20px;
 }
 
 body{
@@ -50,8 +51,16 @@ section{
     margin: 0 auto;
     padding: 48px 0 200px;
     text-align: center;
-    
+}
 
+@media screen and (max-width: 600px){
+    section{
+        max-width: 90%;
+    }
+}
+
+li{
+    list-style: none;
 }
 
 .title{
@@ -61,6 +70,8 @@ section{
 }
 
 .title h1{
+    width: 80%;
+    height: auto;
 
     text-align: center;
 
@@ -72,14 +83,27 @@ section{
     left: 50%;
     transform: translate(-50%,-50%);
     /* 位置調整 */
-    margin: 0;
+    margin: auto;
     padding: 0;
 
     box-sizing: border-box;
 
     background-color: #d6d6d6;
-
 }
+
+@media screen and (max-width: 600px){
+    .title h1{
+        width: 100%;
+        height: auto;
+        font-size: 150%
+    }
+}
+
+
+
+
+
+
 
 img{
     vertical-align:bottom;
@@ -99,24 +123,26 @@ header{
     top: 0;
 
     vertical-align: bottom;
-
 }
 
 .headerContents{
     display: flex;
     max-width: 80%;
     margin: 0 auto;
+
+    font-size: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .headerRight{
-    padding: 10px 30px;
+    padding: 15px 20px 5px;
 }
 
 .headerLeft{
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin-right: auto;
     color: #653838;
-
 }
 
 .list{
@@ -127,12 +153,54 @@ header{
     padding: 0 10px;
 }
 
-li{
-    list-style: none;
+.next-btn{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1{
+        width: 100%;
+    }
+
+    section{
+        max-width: 100%;
+    }
+
+    .headerContents{
+        max-width: 90%;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .headerLeft h3{
+        padding: 0px;
+    }
+
+    .next-btn{
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0,-50%);
+        width: 25px;
+        height: 48px;
+        margin: auto;
+        background: #653838;
+        color: #F6EEEE;
+    }
+
+
+    .next-btn p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
 
 h2{
-
     font-family: 'iroha-M';
     color: #4e3512;
 
@@ -143,14 +211,27 @@ h2{
     margin-bottom: 100px;
 }
 
-.COC h3{
+@media screen and (max-width:600px){
+    h2{
+        text-align: center;
+        font-size: 100%;
+    }
+}
 
+.COC h3{
     font-family: 'iroha-R';
 
     text-align: left;
     margin: 50px 0;
     padding-left: 10px;
     border-left: 10px solid #d6d6d6;
+}
+
+@media screen and (max-width:600px){
+    .COC h3{
+        font-size: 80%;
+        margin-left: 10px;
+    }
 }
 
 li p{
@@ -160,15 +241,20 @@ li p{
 
 p{
     text-align: center;
+    line-height: 30px;
 }
 
+.menu-text{
+    max-width: 60%;
+    margin: auto;
+}
 
 .system{
     display: flex;
     flex-wrap: wrap;
 
     max-width: 100%;
-    margin: 100px auto 0;
+    margin: 100px auto 50px;
 }
 
 .system li{
@@ -177,8 +263,8 @@ p{
     box-sizing: border-box;
 }
 
-.system p{
-    text-align: center;
+.system li p{
+    line-height: 20px;
 }
 
 .system img{
@@ -186,6 +272,18 @@ p{
     height: auto;
     border: 5px solid #999;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px){
+    .system{
+        flex-direction: column;
+    }
+
+    .system li{
+        width: 80%;
+        height: auto;
+        margin: 0 auto 5%;
+    }
 }
 
 
@@ -199,6 +297,21 @@ p{
 .coc-kinds{
     width: 70%;
     height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .closed-city{
+        flex-direction: column;
+    }
+
+    .closed-city .coc-text{
+        order: 1;
+    }
+
+    .coc-kinds{
+        width: 100%;
+        height: auto;
+    }
 }
 
 .player{
@@ -223,6 +336,19 @@ p{
 }
 
 
+@media screen and (max-width: 600px){
+    .player{
+        flex-direction: column;
+    }
+
+    .player li{
+        width: 80%;
+        height: auto;
+        margin: 0 auto 10%;
+    }
+}
+
+
 .sessionList{
     box-sizing: border-box;
 }
@@ -230,11 +356,6 @@ p{
 .sessionList li{
     margin: 50px;
     color: #634317;
-}
-
-.sessionList h3{
-    padding: 10px;
-    margin: auto;
 }
 
 .sessionList img{
@@ -279,7 +400,22 @@ p{
 
     background-color: #DFDCD8;
     border-radius: 5vw;
+}
 
+@media screen and (max-width: 600px) {
+    .coc-container{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .coc-session{
+        width: 80%;
+        height: auto;
+    }
+
+    .coc-picture{
+        padding-bottom: 5%;
+    }
 }
 
 .coc-text{
@@ -305,6 +441,13 @@ p{
     width: 80%;
     height: auto;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .image{
+        width: 100%;
+        height: auto;
+    }
 }
 
 a{
@@ -341,24 +484,34 @@ input[type="checkbox"]{
 
 .popup-container{
     display: flex;
+    max-width: 90%;
     margin: auto;
     box-sizing: border-box;
-    padding: 30px;
 }
 
 .popup-session{
     width: 30%;
     height: 30%;
+    margin: 5%;
 }
 
 .popup-container p{
-    margin: 0;
+    /* margin: 0; */
     padding: 5vw;
+}
 
+.textSize{
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+}
+
+.textSize span{
+    font-weight: normal;
 }
 
 .close-btn{
-
     position: absolute;
 
     top: 95%;
@@ -370,169 +523,16 @@ input[type="checkbox"]{
     border-radius: 5px;
     color: #F6EEEE;
     background-color: #524C48;
+
+    font-size: 16px;
 }
 
 
-#triggerA:checked + .over{
-    display: block;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-}
-
-#popupA{
-
-    color: #653838;
-
-    /* 枠の大きさ */
-    width: 80%;
-    height: 80%;
-    background-color: #DFDCD8;
-    border-radius: 10px;
-
-    /* 枠の位置 */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    position: relative;
-
-}
-
-
-#triggerB:checked + .over{
-    display: block;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-}
-
-#popupB{
-
-    color: #653838;
-
-    /* 枠の大きさ */
-    width: 80%;
-    height: 80%;
-    background-color: #DFDCD8;
-    border-radius: 10px;
-
-    /* 枠の位置 */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    position: relative;
-
-}
-
-
-#triggerC:checked + .over{
-    display: block;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-}
-
-#popupC{
-
-    color: #653838;
-
-    /* 枠の大きさ */
-    width: 80%;
-    height: 80%;
-    background-color: #DFDCD8;
-    border-radius: 10px;
-
-    /* 枠の位置 */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    position: relative;
-
-}
-
-
-#triggerD:checked + .over{
-    display: block;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-}
-
-#popupD{
-
-    color: #653838;
-
-    /* 枠の大きさ */
-    width: 80%;
-    height: 80%;
-    background-color: #DFDCD8;
-    border-radius: 10px;
-
-    /* 枠の位置 */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    position: relative;
-
-}
-
-
-#triggerE:checked + .over{
-    display: block;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-}
-
-#popupE{
-
-    color: #653838;
-
-    /* 枠の大きさ */
-    width: 80%;
-    height: 80%;
-    background-color: #DFDCD8;
-    border-radius: 10px;
-
-    /* 枠の位置 */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    position: relative;
-
-}
-
-
+#triggerA:checked + .over,
+#triggerB:checked + .over,
+#triggerC:checked + .over,
+#triggerD:checked + .over,
+#triggerE:checked + .over,
 #triggerF:checked + .over{
     display: block;
     z-index: 9999;
@@ -544,8 +544,7 @@ input[type="checkbox"]{
     left: 0px;
 }
 
-#popupF{
-
+#popupA{
     color: #653838;
 
     /* 枠の大きさ */
@@ -561,5 +560,114 @@ input[type="checkbox"]{
     transform: translate(-50%,-50%);
 
     position: relative;
+}
 
+#popupB{
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 80%;
+    height: 80%;
+    background-color: #DFDCD8;
+    border-radius: 10px;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+}
+
+#popupC{
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 80%;
+    height: 80%;
+    background-color: #DFDCD8;
+    border-radius: 10px;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+}
+
+#popupD{
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 80%;
+    height: 80%;
+    background-color: #DFDCD8;
+    border-radius: 10px;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+}
+
+#popupE{
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 80%;
+    height: 80%;
+    background-color: #DFDCD8;
+    border-radius: 10px;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+}
+
+#popupF{
+    color: #653838;
+
+    /* 枠の大きさ */
+    width: 80%;
+    height: 80%;
+    background-color: #DFDCD8;
+    border-radius: 10px;
+
+    /* 枠の位置 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    position: relative;
+}
+
+.popup{
+    max-width: 80%;
+    height: auto;
+}
+
+.popup-text{
+    box-sizing: border-box;
+    overflow-x: scroll;
+    font-size: 20px;
+    max-width: 90%;
+    height: 40%;
+    margin: 0 auto 300px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #cec8c3;
 }
