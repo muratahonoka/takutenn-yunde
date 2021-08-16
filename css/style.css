@@ -490,6 +490,7 @@ input[type="checkbox"]{
 }
 
 .popup-session{
+    max-width: 220px;
     width: 30%;
     height: 30%;
     margin: 5%;
@@ -653,6 +654,8 @@ input[type="checkbox"]{
 }
 
 .popup{
+    box-sizing: border-box;
+    padding-bottom: 10%;
     max-width: 80%;
     height: auto;
 }
@@ -660,10 +663,28 @@ input[type="checkbox"]{
 .popup-text{
     box-sizing: border-box;
     overflow-x: scroll;
-    font-size: 20px;
+    font-size: 18px;
     max-width: 90%;
-    height: 40%;
+    height: 35%;
     margin: 0 auto 300px;
+}
+
+@media screen and (max-width: 1000px){
+    .popup-text{
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .popup-text{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .popup-text{
+        height: 60%;
+    }
 }
 
 footer{
