@@ -131,7 +131,7 @@ header{
     margin: 0 auto;
 
     font-size: 20px;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     white-space: nowrap;
 }
 
@@ -153,7 +153,8 @@ header{
     padding: 0 10px;
 }
 
-.next-btn{
+label[for="nav-input"] #btn1,
+label[for="nav-input"] #btn2{
     display: none;
 }
 
@@ -169,7 +170,6 @@ header{
 
     .headerContents{
         max-width: 90%;
-        overflow-x: scroll;
         white-space: nowrap;
     }
 
@@ -177,26 +177,50 @@ header{
         padding: 0px;
     }
 
-    .next-btn{
-        box-sizing: border-box;
+    label[for="nav-input"] #btn1{
         display: block;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(0,-50%);
-        width: 25px;
-        height: 48px;
-        margin: auto;
-        background: #653838;
-        color: #F6EEEE;
+        font-size: 40px;
+        font-weight: 500;
+        color: #653838;
+        text-align: right;
+        transform: scale(1.2,1.7)
     }
 
+    .headerRight{
+        max-width:1000px;
+        padding: 10px;
+    }
 
-    .next-btn p{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+    nav{
+        background-color:#cec8c3;
+        padding:20px 3%;
+        display: none;
+    }
+
+    #nav-input:checked ~ nav {
+        display: block;
+    }
+
+    #nav-input:checked ~ label[for="nav-input"] #btn1 {
+        display: none;
+    }
+
+    #nav-input:checked ~ label[for="nav-input"] #btn2 {
+        display: block;
+        font-size: 40px;
+        font-weight: 500;
+        color: #653838;
+        text-align: right;
+    }
+
+    .list{
+        flex-direction: column;
+    }
+    
+    .list li{
+        margin: 10px;
+        border-bottom: 1px solid #653838;
+        text-align: center;
     }
 }
 
@@ -214,7 +238,7 @@ h2{
 @media screen and (max-width:600px){
     h2{
         text-align: center;
-        font-size: 100%;
+        font-size: 160%;
     }
 }
 
@@ -229,7 +253,7 @@ h2{
 
 @media screen and (max-width:600px){
     .COC h3{
-        font-size: 80%;
+        font-size: 100%;
         margin-left: 10px;
     }
 }
@@ -244,9 +268,15 @@ p{
     line-height: 30px;
 }
 
-.menu-text{
+.main-text{
     max-width: 60%;
     margin: auto;
+}
+
+@media screen and (max-width:600px){
+    .main-text{
+        max-width: 70%;
+    }
 }
 
 .system{
@@ -302,6 +332,7 @@ p{
 @media screen and (max-width: 600px) {
     .closed-city{
         flex-direction: column;
+        padding-bottom: 10%;
     }
 
     .closed-city .coc-text{
@@ -319,7 +350,7 @@ p{
     flex-wrap: wrap;
 
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 10%;
 }
 
 
@@ -422,6 +453,11 @@ p{
     margin: auto;
 }
 
+.coc-text2{
+    font-size: 16px;
+    line-height: 20px;
+}
+
 
 .image1{
     box-sizing: border-box;
@@ -462,7 +498,7 @@ a:hover{
     color: #cec8c3;
 }
 
-label:hover{
+.sessionList label:hover{
     cursor: pointer;
     color: #F6EEEE;
     background-color: #524C48;
@@ -493,7 +529,7 @@ input[type="checkbox"]{
     max-width: 220px;
     width: 30%;
     height: 30%;
-    margin: 5%;
+    margin: 3%;
 }
 
 .popup-container p{
@@ -504,12 +540,38 @@ input[type="checkbox"]{
 .textSize{
     font-size: 26px;
     font-weight: bold;
+    line-height: 110%;
     padding: 10px;
     margin: auto;
 }
 
-.textSize span{
+@media screen and (max-width: 800px){
+    .textSize{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .textSize{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .textSize{
+        font-size: 16px;
+    }
+}
+
+.popup span{
     font-weight: normal;
+    font-size: 14px;
+}
+
+.textSize2{
+    margin: 0 5% 2%;
+    text-align: right;
+    font-size: 16px;
 }
 
 .close-btn{
@@ -664,6 +726,8 @@ input[type="checkbox"]{
     box-sizing: border-box;
     overflow-x: scroll;
     font-size: 18px;
+    text-align: left;
+    line-height: 115%;
     max-width: 90%;
     height: 35%;
     margin: 0 auto 300px;
@@ -684,6 +748,12 @@ input[type="checkbox"]{
 @media screen and (max-width: 600px){
     .popup-text{
         height: 60%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .popup-text{
+        height: 70%;
     }
 }
 

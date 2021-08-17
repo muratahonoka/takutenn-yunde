@@ -41,13 +41,19 @@
                 <p class="headerLeft">クトゥルフ</p>
 
                 <div class="headerRight">
-                    <ul class="list">
-                        <a href="#menu1"><li>TRPG</li></a>
-                        <a href="#menu2"><li>システム</li></a>
-                        <a href="#menu3"><li>COC</li></a>
-                        <a href="#menu4"><li>感想</li></a>
-                    </ul>
-                    <div class="next-btn"><p>＞</p></div>
+                    <input id="nav-input" type="checkbox" class="nav-hidden">
+                    <label id="menu-btn" for="nav-input">
+                        <p id="btn1">≡</p>
+                        <p id="btn2">×</p>
+                    </label>
+                    <nav>
+                        <ul class="list">
+                            <a href="#menu1"><li>TRPG</li></a>
+                            <a href="#menu2"><li>システム</li></a>
+                            <a href="#menu3"><li>COC</li></a>
+                            <a href="#menu4"><li>感想</li></a>
+                        </ul>
+                    </nav>
                 </div>
 
             </div>
@@ -68,11 +74,13 @@
 
                 <h2>TRPGってなぁに？？？</h2>
 
-                <div class="menu-text">
+                <div class="main-text">
                     <p>TRPGは、登場人物の1人になってとある物語を完成させることができる遊び！！</p>
                     <p>自分のやりたいことが(ある程度)自由に選択できる！！</p>
                     <p>サイコロの出た目によって結末が変わることもある！！</p>
                     <p>人生ゲームみたい！！</p>
+                    <p>　</p>
+                    <p>これは個人の主観に基づくものです</p>
                 </div>
 
             </section>
@@ -105,13 +113,11 @@
                     </li>
                 </ul>
 
-                <div class="menu-text">
-                    <p>他にもいろいろなシステムがあるよ！！</p>
+                <div class="main-text">
+                    <p>これはあくまでも一部であって<br>他にもいろいろなシステムがあるよ！！</p>
                     <p>そのシステムごとに特徴がある！！</p>
                     <p>
-                        例えば、
-                        ダブルクロスなら戦闘シーン特化で遊べるし、
-                        エモクロアなら怪異と共鳴する！！！
+                        最近、私がよく見かけているシステムはクトゥルフ神話TRPG<br>有名な"SAN値チェック"ってのもこれにでてくるよ
                     </p>
                 </div>
 
@@ -127,10 +133,16 @@
 
                 <div class="closed-city">
                     <img src="images/closed.png" alt="クローズド系" class="coc-kinds">
-                    <p class="coc-text">クローズド</p>
+                    <div class="coc-text">
+                        <p>クローズド</p>
+                        <p class="coc-text2">いわゆる"白い部屋"ってやつ<br>脱出ゲームみたいで謎解きも多いよ</p>
+                    </div>
                 </div>
                 <div class="closed-city">
-                    <p class="coc-text">シティ</p>
+                    <div class="coc-text">
+                        <p>シティ</p>
+                        <p class="coc-text2">いろんな場所を探索できる<br>ゲーム機でやるRPGっぽくて自由度が高いよ</p>
+                    </div>
                     <img src="images/city.png" alt="シティ系" class="coc-kinds">
                     
                 </div>
@@ -151,6 +163,15 @@
                         <p>3人以上で</p>
                     </li>
                 </ul>
+                <div class="main-text">
+                    <p>
+                        それぞれの目標のために<br>
+                        時に対立しながら<br>
+                        時に協力しながら<br>
+                        物語を進めていくよ！！
+                    </p>
+                    <p>みんなで楽しめたら勝ち！！</p>
+                </div>
 
             </section>
 
@@ -159,7 +180,7 @@
 
                 <h2>好きな配信！！！</h2>
 
-                <p>タイトルをクリックすると、そのシナリオのネタバレ込みで好きなところを語っています</p>
+                <p class="main-text">タイトルクリックで<br>そのシナリオのネタバレ込みの<br>好きなところを語っています</p>
 
                 <ul class="sessionList">
 
@@ -179,18 +200,21 @@
                                 <div id="popupA" class="popup">
                                     <div class="popup-container">
                                         <img src="images/kaitai.png" alt="壊胎" class="popup-session">
-                                        <p class="textSize">あなたたちは選ばれた</p>
+                                        <p class="textSize">それは、人間に似た奇妙な<span>———</span>だった</p>
                                     </div>
+                                    <p class="textSize2">シナリオ作者：むつー 様</p>
                                     <p class="popup-text">
-                                        すごくかっこいい"変身"が見れる。
-                                        最初はクローズものとして、謎解き要素も多くある。
-                                        さらに、2PLであるが故にこのシナリオをやる人それぞれに異なった関係性が作られる。
-                                        最後の最後までハラハラが止まらないとても面白いシナリオ！！！
-                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-                                        ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                                        私がハマったきっかけ①<br><br>
+                                        少し変わったクローズド系のシナリオになっていて、とても満足感のあるシナリオ。<br>
+                                        徐々に開示されていく情報から考察していくのは楽しいし、配信を見ている時もPLの方々の考察を聞くのがとても楽しいです。
+                                        <br><br>↓<br>↓<br>↓<br><br>
+                                        <span>——ここからネタバレを含みます——</span>
+                                        <br><br>
+                                        このシナリオの一番のネタバレであり見所であるのは、すごくかっこいい"変身"が見れるところ。<br>
+                                        いろいろなPLの方々がでている配信・動画のどれを見ても、まるでニチアサのような展開にワクワクした声が漏れているの様子がとても楽しいです。<br>
+                                        異星人との戦いはとても楽しそうで(これも上手く戦えるかはダイスの運次第ですが)何回も見ても飽きることはありません。<br>
+                                        さらに、2PLであるが故にこのシナリオをやる人それぞれに異なった関係性が作られるところも面白いところです。<br>
+                                        多くの不安が残るまま、たくさん悩んで出したそれぞれの答えが本当に正しいのか、最後の最後までハラハラが止まらないシナリオ！<br>
                                     </p>
     
                                     <label for="triggerA" class="close-btn">閉じる</label>
@@ -216,12 +240,33 @@
                             <input type="checkbox" id="triggerB">
 
                             <div class="over">
-                                <div id="popupB">
+                                <div id="popupB" class="popup">
                                     <div class="popup-container">
                                         <img src="images/kaikou.png" alt="傀逅" class="popup-session">
-                                        <p class="textSize">それはまるで</p>
+                                        <p class="textSize">それは、人間に似た奇妙な<span>———</span>達だった</p>
                                     </div>
-                                    <p class="popup-text">情緒がめちゃくちゃ</p>
+                                    <p class="textSize2">シナリオ作者：むつー 様</p>
+                                    <p class="popup-text">
+                                        私がハマったきっかけ②<br><br>
+                                        前作の壊胎とは世界観は同じ<br>
+                                        このシナリオの最大の特徴のひとつは探索者にとって"大切な人"がいるということ。例えば、兄弟姉妹、親、子供、恋人、親友など。
+                                        大切な人と暮らす日常のあたたかさに心がおちつきます。<br>
+                                        わりと序盤で物語はとんでもない展開を迎え、その後も目まぐるしく話が展開されていくので、
+                                        飽きることなく、それどころかずっとワクワクしながらこの物語を楽しむことができます。
+                                        <br><br>↓<br>↓<br>↓<br><br>
+                                        <span>——ここからネタバレを含みます——</span>
+                                        <br><br>
+                                        このシナリオも前作の壊胎と同様に、かっこいい"変身"が見られます。<br>
+                                        しかし前作とあきらかに異なるのはその見た目。世界を守るために、大切な人との日常を守るために、
+                                        いわゆるダークヒーローとして敵に立ち向かって行きます。<br>
+                                        私はこのシナリオが本当に大好きで,見るたびに心が苦しくなるのに見返すことがやめられないほど素晴らしい作品です。<br>
+                                        また、この物語はかなりの長編なのですが、特にその後半部分には辛く苦しい地獄のような展開が続きます。<br>
+                                        一番苦しいのは、"大切な人"に大きな危機が迫り来るところ。どのPLの方々も"大切な人"のために戦ってきた中で、この展開はとても辛そうに見えました。
+                                        そんな中、彼らがどう思うのか、どんな意思を持っているのかを聞くと、とても心にくるものがあります。<br>
+                                        さらに、ラスボスとの戦いも、バケモノ級でもはや何が起こっているのかわからないレベルでただただ興奮する。どこまでもニチアサです。<br>
+                                        この地獄の連続を乗り越えた先でむかえるエンディングは、どのPLの方々のものもすごく感動的で情緒がめちゃくちゃに壊されます。<br>
+                                        感情のジェットコースターを味わえるとっても素敵なシナリオ！！
+                                    </p>
     
                                     <label for="triggerB" class="close-btn">閉じる</label>
     
@@ -243,11 +288,12 @@
                             <input type="checkbox" id="triggerC">
 
                             <div class="over">
-                                <div id="popupC">
+                                <div id="popupC" class="popup">
                                     <div class="popup-container">
                                         <img src="images/yama.png" alt="狂気山脈" class="popup-session">
-                                        <p class="textSize">頂上を目指して</p>
+                                        <p class="textSize">狂気の峰へ</p>
                                     </div>
+                                    <p class="textSize2">シナリオ作者：まだら牛 様</p>
                                     <p class="popup-text">楽しさと緊張感と感動が味わえる<br>アニメ映画化プロジェクトが動いているよ</p>
     
                                     <label for="triggerC" class="close-btn">閉じる</label>
@@ -270,12 +316,13 @@
                             <input type="checkbox" id="triggerD">
 
                             <div class="over">
-                                <div id="popupD">
+                                <div id="popupD" class="popup">
                                     <div class="popup-container">
                                         <img src="images/kazoku.png" alt="とある幸せな家族の話" class="popup-session">
-                                        <p class="textSize">あなたは家族を愛している</p>
+                                        <p class="textSize">あなたたちは、<br>互いが互いのことを想い合う家族だ</p>
                                     </div>
-                                    <p class="popup-text">互いが互いのことを思いあう幸せな家族であるが故に</p>
+                                    <p class="textSize2">シナリオ作者：さんとなな 様</p>
+                                    <p class="popup-text">しゅき</p>
     
                                     <label for="triggerD" class="close-btn">閉じる</label>
     
@@ -297,11 +344,12 @@
                             <input type="checkbox" id="triggerE">
 
                             <div class="over">
-                                <div id="popupE">
+                                <div id="popupE" class="popup">
                                     <div class="popup-container">
                                         <img src="images/katashiro.png" alt="カタシロ" class="popup-session">
-                                        <p class="textSize">強い光を覚えている</p>
+                                        <p class="textSize">目が覚めると病院にいた</p>
                                     </div>
+                                    <p class="textSize2">シナリオ作者：ディズム 様</p>
                                     <p class="popup-text">短いながらも考えさせられる<br>これをもとに舞台化したカタシロリビルドもすごく良かった</p>
     
                                     <label for="triggerE" class="close-btn">閉じる</label>
@@ -324,11 +372,12 @@
                             <input type="checkbox" id="triggerF">
 
                             <div class="over">
-                                <div id="popupF">
+                                <div id="popupF" class="popup">
                                     <div class="popup-container">
                                         <img src="images/kanakimi.png" alt="彼方からの君に捧ぐ" class="popup-session">
-                                        <p class="textSize">君とよく似た顔で</p>
+                                        <p class="textSize">ほら、その顔をよく見せてくれ</p>
                                     </div>
+                                    <p class="textSize2">シナリオ作者：キリト 様</p>
                                     <p class="popup-text">4人でわちゃわちゃしながらも大きな決断を求められる</p>
     
                                     <label for="triggerF" class="close-btn">閉じる</label>
