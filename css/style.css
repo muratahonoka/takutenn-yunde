@@ -84,7 +84,7 @@ li{
     transform: translate(-50%,-50%);
     /* 位置調整 */
     margin: auto;
-    padding: 0;
+    padding: 10px 0;
 
     box-sizing: border-box;
 
