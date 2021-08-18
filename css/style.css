@@ -88,7 +88,7 @@ li{
 
     box-sizing: border-box;
 
-    background-color: #d6d6d6;
+    background-color: #cec8c3;
 }
 
 @media screen and (max-width: 600px){
@@ -113,6 +113,7 @@ img{
 
 
 header{
+    height: 50px;
     background-color: #cec8c3;
     margin: 0;
     padding: 0;
@@ -143,6 +144,21 @@ header{
     padding: 10px 20px;
     margin-right: auto;
     color: #653838;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1000px){
+    .headerContents{
+        max-width: 90%;
+    }
+
+    .headerLeft{
+        display: none;
+    }
+
+    .headerRight{
+        margin: 0;
+    }
 }
 
 .list{
@@ -153,9 +169,16 @@ header{
     padding: 0 10px;
 }
 
+@media screen and (max-width: 1000px){
+    .list li{
+        padding: 0 20px;
+    }
+}
+
 label[for="nav-input"] #btn1,
 label[for="nav-input"] #btn2{
     display: none;
+    padding: 0 0 0 3%;
 }
 
 
@@ -167,28 +190,42 @@ label[for="nav-input"] #btn2{
     section{
         max-width: 100%;
     }
-
+}
+@media screen and (max-width: 730px) {
     .headerContents{
         max-width: 90%;
         white-space: nowrap;
     }
 
-    .headerLeft h3{
-        padding: 0px;
+    .headerLeft{
+        display: block;
+        margin-right: auto;
+        padding: 10px 0 10px 5px;
+        letter-spacing: -2px;
+        z-index: 90;
     }
 
     label[for="nav-input"] #btn1{
+        position: absolute;
         display: block;
         font-size: 40px;
         font-weight: 500;
         color: #653838;
-        text-align: right;
+        left: 86.5%;
         transform: scale(1.2,1.7)
     }
 
     .headerRight{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 80;
+        margin: 0px;
         max-width:1000px;
-        padding: 10px;
+        padding: 10px 0;
+
     }
 
     nav{
@@ -198,6 +235,7 @@ label[for="nav-input"] #btn2{
     }
 
     #nav-input:checked ~ nav {
+        padding-top: 10%;
         display: block;
     }
 
@@ -211,6 +249,8 @@ label[for="nav-input"] #btn2{
         font-weight: 500;
         color: #653838;
         text-align: right;
+        position: absolute;
+        left: 86.5%;
     }
 
     .list{
@@ -218,9 +258,9 @@ label[for="nav-input"] #btn2{
     }
     
     .list li{
-        margin: 10px;
+        margin: 20px;
         border-bottom: 1px solid #653838;
-        text-align: center;
+        text-align: right;
     }
 }
 
@@ -248,7 +288,7 @@ h2{
     text-align: left;
     margin: 50px 0;
     padding-left: 10px;
-    border-left: 10px solid #d6d6d6;
+    border-left: 10px solid #dfdad7;
 }
 
 @media screen and (max-width:600px){
@@ -276,7 +316,16 @@ p{
 @media screen and (max-width:600px){
     .main-text{
         max-width: 70%;
+        font-size: 16px;
     }
+
+    .main-text p{
+        font-size: 16px;
+    }
+}
+
+.main-text .attention{
+    font-size: 12px;
 }
 
 .system{
@@ -321,7 +370,7 @@ p{
 .closed-city{
     display: flex;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 20px;
 }
 
 .closed-city .coc-text{
@@ -470,6 +519,11 @@ p{
     text-align: center;
 }
 
+.image1 p{
+    padding-top: 10px;
+    font-size: 28px;
+}
+
 .image2{
     box-sizing: border-box;
     padding: 30vh 0 10vh;
@@ -567,7 +621,7 @@ input[type="checkbox"]{
     }
 }
 
-.popup span{
+.sessionList span{
     font-weight: normal;
     font-size: 14px;
 }
@@ -762,8 +816,42 @@ input[type="checkbox"]{
     }
 }
 
+section:last-of-type{
+    padding-bottom: 50px;
+}
+
 footer{
     width: 100%;
     height: 200px;
     background-color: #cec8c3;
+    position: relative;
+}
+
+footer p{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-70%);
+    font-size: 16px;
+    color: #885858;
+    line-height: 160%;
+}
+
+@media screen and (max-width: 400px){
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: #cec8c3;
+        position: relative;
+    }
+    
+    footer p{
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%,-70%);
+        font-size: 10px;
+        color: #885858;
+        line-height: 160%;
+    }
 }
