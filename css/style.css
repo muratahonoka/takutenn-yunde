@@ -324,6 +324,10 @@ p{
     margin: 10px;
 }
 
+.closed-city .coc-text{
+    margin: auto 10px;
+}
+
 .coc-kinds{
     width: 70%;
     height: auto;
@@ -538,7 +542,7 @@ input[type="checkbox"]{
 }
 
 .textSize{
-    font-size: 26px;
+    font-size: 150%;
     font-weight: bold;
     line-height: 110%;
     padding: 10px;
@@ -612,7 +616,7 @@ input[type="checkbox"]{
 
     /* 枠の大きさ */
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: #DFDCD8;
     border-radius: 10px;
 
@@ -630,7 +634,7 @@ input[type="checkbox"]{
 
     /* 枠の大きさ */
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: #DFDCD8;
     border-radius: 10px;
 
@@ -648,7 +652,7 @@ input[type="checkbox"]{
 
     /* 枠の大きさ */
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: #DFDCD8;
     border-radius: 10px;
 
@@ -666,7 +670,7 @@ input[type="checkbox"]{
 
     /* 枠の大きさ */
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: #DFDCD8;
     border-radius: 10px;
 
@@ -684,7 +688,7 @@ input[type="checkbox"]{
 
     /* 枠の大きさ */
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: #DFDCD8;
     border-radius: 10px;
 
@@ -702,7 +706,7 @@ input[type="checkbox"]{
 
     /* 枠の大きさ */
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: #DFDCD8;
     border-radius: 10px;
 
@@ -727,33 +731,34 @@ input[type="checkbox"]{
     overflow-x: scroll;
     font-size: 18px;
     text-align: left;
-    line-height: 115%;
-    max-width: 90%;
-    height: 35%;
+    line-height: 130%;
+    max-width: 80%;
+    height: 45%;
     margin: 0 auto 300px;
 }
 
 @media screen and (max-width: 1000px){
     .popup-text{
-        height: 40%;
+        height: 50%;
     }
 }
 
 @media screen and (max-width: 800px){
     .popup-text{
-        height: 50%;
+        height: 60%;
     }
 }
 
 @media screen and (max-width: 600px){
     .popup-text{
-        height: 60%;
+        height: 65%;
     }
 }
 
 @media screen and (max-width: 400px){
     .popup-text{
         height: 70%;
+        font-size: 14px;
     }
 }
 
